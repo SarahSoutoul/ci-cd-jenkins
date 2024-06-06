@@ -9,3 +9,10 @@ node {
 		echo "Integration Test"
 	}
 }
+
+
+node {
+	echo "Build"
+	echo "Test"
+	echo "Integration Test"
+}
