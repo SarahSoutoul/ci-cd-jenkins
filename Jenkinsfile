@@ -8,9 +8,7 @@ pipeline {
 	stages {
 		stage('Build') {
             steps {
-                # UPDATED CONFIG 
                 sh 'mvn --version'
-                # UPDATED CONFIG 
                 sh 'docker --version'
 
                 echo 'Build'
