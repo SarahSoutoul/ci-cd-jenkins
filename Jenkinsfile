@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                # UPDATED CONFIG
                 sh 'mvn --version'
                 echo 'Build'
             }
