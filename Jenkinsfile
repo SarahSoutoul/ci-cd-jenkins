@@ -3,6 +3,7 @@ pipeline {
     environment {
         dockerHome = tool "myDocker"
         mavenHome = tool "myMaven"
+		DOCKER_TLS_VERIFY = "0"
         PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
     }
     stages {
@@ -51,7 +52,7 @@ pipeline {
                 script {
                     docker.withRegistry('', 'dockerhub') {
                         dockerImage.push()
-                     dockerImage.push('latest')
+                     	dockerImage.push('latest')
                     }
                 }
             }
