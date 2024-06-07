@@ -3,7 +3,6 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				sh 'node --version'
 				echo "Build"
 			}
 		}
